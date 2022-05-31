@@ -1,0 +1,23 @@
+################################################################################
+# Copyright (c) 2021 ContinualAI Research
+# Adapted by Matthias De Lange (KU Leuven).
+################################################################################
+
+channels:
+- conda-forge
+dependencies:
+- psutil
+- tensorboard
+- scikit-learn
+- matplotlib
+- numpy
+- conda-forge::quadprog
+- tqdm
+- tabulate
+- pyyaml
+- pip
+- pip:
+    - pytorchcv
+    - googledrivedownloader
+    - wandb
+    - torchmetrics

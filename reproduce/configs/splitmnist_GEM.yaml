@@ -1,0 +1,29 @@
+# GENERAL
+n_seeds: 5
+num_workers: 1
+
+# MODEL
+classifier: "linear"
+backbone: "mlp"
+featsize: 400
+
+# DATA SETUP
+scenario: 'smnist'
+task_incr: False
+epochs: 10
+
+# STRATEGY
+strategy: "GEM"
+lr:
+#  - 0.1
+  - 0.01
+#  - 0.001
+#  - 0.0001
+gem_gamma: 0.5
+bs: 256
+mem_size: 2000
+
+# CONTINUAL EVAL
+enable_continual_eval: True
+eval_periodicity: 1
+eval_task_subset_size: 1000
