@@ -1,8 +1,8 @@
 # Continual Evaluation for Lifelong Learning
 [//]: # (**What is this repo?**)
-This is a Pytorch and Avalanche based repository to enable continual evaluation per iteration in continual learning, opposed to the standard task transition based evaluation.
-It is the main codebase for the paper
-["Continual evaluation for lifelong learning: Identifying the stability gap"](https://arxiv.org/abs/2205.13452).
+This is a Pytorch and Avalanche based repository to enable finegrained continual evaluation in continual learning, opposed to the standard task transition based evaluation.
+It is the main codebase for the *Spotlight ICLR 2023 paper*:
+["Continual evaluation for lifelong learning: Identifying the stability gap"](https://openreview.net/forum?id=Zy350cRstc6).
 
 **Why continual evaluation?**
 Using continual evaluation, [our work](https://arxiv.org/abs/2205.13452) finds a *stability gap*, where representative continual learning
@@ -19,7 +19,7 @@ learners in the real world, especially for safety-critical applications and real
 - **Extensive tracking**: Track all stats of your continual learning model, e.g. per-iteration feature drift and gradient norms.
 - **7 Continual Learning benchmarks** based on: MNIST, CIFAR10, Mini-Imagenet, Mini-DomainNet, PermutedMNIST, RotatedMNIST, Digits
 
-*Project Status*: Codebase delivered as is, no support available until 2023.
+*Project Status*: Codebase delivered as is, no support available.
 
 ## Setup
 This code uses
@@ -85,11 +85,13 @@ To view results for Tensorboard, run:
 ## Citing and license
 Please consider citing us upon using this repo:
 
-    @misc{delange2022cleval
-    author = {De Lange, Matthias and van de Ven, Gido and Tuytelaars, Tinne},
-    title = {Continual evaluation for lifelong learning: Identifying the stability gap},
-    url = {https://arxiv.org/abs/2205.13452}, 
-    year = {2022}
+    @inproceedings{
+      delange2023continual,
+      title={Continual evaluation for lifelong learning: Identifying the stability gap},
+      author={Matthias De Lange and Gido M van de Ven and Tinne Tuytelaars},
+      booktitle={The Eleventh International Conference on Learning Representations },
+      year={2023},
+      url={https://openreview.net/forum?id=Zy350cRstc6}
     }
   
 Code is available under MIT license: A short and simple permissive license with conditions only requiring preservation of copyright and license notices.
